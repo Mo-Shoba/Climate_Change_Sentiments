@@ -1,7 +1,7 @@
 <div align="center">
 
   <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/pexels-pixabay-163097.jpg" alt="logo" width="400" height="auto" />
-  <h1>"Does This User Believe Climate Change is Man-Made?" 
+  <h1>"Does This User Believe Climate Change is Man-Made or Not?" 
   
   Tweets Classification Project</h1>
   

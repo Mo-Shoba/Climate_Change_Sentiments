@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/pexels-pixabay-163097.jpg" alt="logo" width="400" height="auto" />
+  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/pexels-pixabay-163097.jpg" alt="logo" width="400" height="auto" />
   <h1>"Does This User Believe Climate Change is Man-Made?" 
   
   Tweets Classification Project</h1>
@@ -80,14 +80,24 @@ geographic categories -
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://github.com/Mo-Shoba/King-MisuZulu-Coronation/blob/main/Images/Hashtags_screenshot.png" width="600" height="600" alt="screenshot" />
+  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_2.png" width="600" height="600" alt="screenshot" />
 </div>
+
+The sentiments in our training set was quite unbalanced. To deal with this we made use of several approaches, such as undersampling, oversampling and combinations of the two.
+
 
 <div align="center"> 
-  <img src="https://github.com/Mo-Shoba/King-MisuZulu-Coronation/blob/main/Images/Positive_sentiments_wordcloud.png" width="600" height="auto" alt="screenshot" />
+  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_1.png" width="600" height="auto" alt="screenshot" />
 </div>
 
+These are just some of the most prominent hashtags used under each sentiment.
 
+
+<div align="center"> 
+  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_3.png" width="600" height="auto" alt="screenshot" />
+</div>
+
+This is what the final dataframe looked like after undergoing transformations that pertain to natural language processing. Here we can also see the classification attributed to previously unseen tweets in the last column.
 <!-- TechStack -->
 ### :space_invader: Tech Stack
 

@@ -74,6 +74,8 @@ The training data is quite imbalanced. The numerical labels on the x-axis were a
 
 To overcome this challenge, I attempted to use several techniques, including undersampling, oversampling and a combination of both techniques.
 
+---
+
 
 <div align="center"> 
   <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_1.png" width="600" height="auto" alt="screenshot" /> 
@@ -81,12 +83,16 @@ To overcome this challenge, I attempted to use several techniques, including und
 
 
  Here we have a screenshot of the top hashtags used per sentiment/category.
- 
+
+---
+
  
 <div align="center"> 
   <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_3.png" width="600" height="auto" alt="screenshot" /> 
 </div>
  Here we have a screenshot of the final dataframe after the relevant natural language processing transformations have taken place (removal of stop words, lemmatization, etc.). In the final column, there is a prediction made on the previously unseen data.
+
+---
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started

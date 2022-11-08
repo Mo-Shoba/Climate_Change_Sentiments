@@ -41,25 +41,13 @@
 
 - [About the Project](#star2-about-the-project)
   * [Screenshots](#camera-screenshots)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
-- [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
+  * [Getting Started](#toolbox-getting-started)
+  * [Packages](#bangbang-prerequisites)
   * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
-
+  * [Roadmap](#compass-roadmap)
+  * [Contributing](#wave-contributing)
+  * [Contact](#handshake-contact)
+  * [Acknowledgements](#gem-acknowledgements)
   
 
 <!-- About the Project -->
@@ -77,189 +65,70 @@ broad base of consumer sentiment, spanning multiple demographic and
 geographic categories -
 
 <!-- Screenshots -->
-### :camera: Screenshots
+## :camera: Screenshots
 
 <div align="center"> 
   <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_2.png" width="600" height="600" alt="screenshot" />
 </div>
+The training data is quite imbalanced. The numerical labels on the x-axis were also changed for ease of comprehension. The numbers corresponded to the following: -1 == negative, 0 == neutral, 1==positive, 2==news.
 
-The sentiments in our training set was quite unbalanced. To deal with this we made use of several approaches, such as undersampling, oversampling and combinations of the two.
-
-
-<div align="center"> 
-  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_1.png" width="600" height="auto" alt="screenshot" />
-</div>
-
-These are just some of the most prominent hashtags used under each sentiment.
+To overcome this challenge, I attempted to use several techniques, including undersampling, oversampling and a combination of both techniques.
 
 
 <div align="center"> 
-  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_3.png" width="600" height="auto" alt="screenshot" />
+  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_1.png" width="600" height="auto" alt="screenshot" /> 
 </div>
 
-This is what the final dataframe looked like after undergoing transformations that pertain to natural language processing. Here we can also see the classification attributed to previously unseen tweets in the last column.
-<!-- TechStack -->
-### :space_invader: Tech Stack
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.python.org/">Python</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-### :dart: Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-<!-- Color Reference -->
-### :art: Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
-
-
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
+ Here we have a screenshot of the top hashtags used per sentiment/category.
+ 
+ 
+<div align="center"> 
+  <img src="https://github.com/Mo-Shoba/Climate_Change_Sentiments/blob/main/Images/Screenshot_3.png" width="600" height="auto" alt="screenshot" /> 
+</div>
+ Here we have a screenshot of the final dataframe after the relevant natural language processing transformations have taken place (removal of stop words, lemmatization, etc.). In the final column, there is a prediction made on the previously unseen data.
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
+ 
+<!-- Packages -->
+### :bangbang: Packages
 
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
-
-This project uses Yarn as package manager
+These are the packages used:
 
 ```bash
- npm install --global yarn
+re
+string
+numpy 
+random
+pandas==1.3.5 
+matplotlib.pyplot 
+advertools==0.13.1
+nltk==3.6.5
+wordcloud==1.8.1
+string
+spacy==3.2.4
 ```
+Try the latest version on packages without versions
 
 <!-- Installation -->
-### :gear: Installation
+## :gear: Installation
 
-Install my-project with npm
-
-```bash
-  yarn install my-project
-  cd my-project
-```
-   
-<!-- Running Tests -->
-### :test_tube: Running Tests
-
-To run tests, run the following command
+Perhaps a package you may be unfamiliar with above is advertools. Advertools is an online marketing productivity and analysis tool. You can crawl websites, generate keywords for SEM campaigns, create text ads on a large scale, analyze multiple SERPs at once, gain insights from large social media posts, and get productive as an online marketer.
 
 ```bash
-  yarn test test
-```
-
-<!-- Run Locally -->
-### :running: Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  yarn install
-```
-
-Start the server
-
-```bash
-  yarn start
-```
-
-
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
-
-To deploy this project run
-
-```bash
-  yarn deploy
-```
-
-
-<!-- Usage -->
-## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
+pip install advertools
+# OR:
+pip3 install advertools
 ```
 
 <!-- Roadmap -->
 ## :compass: Roadmap
 
-* [x] Todo 1
-* [ ] Todo 2
+Climate change is an ongoing concern. As I write this readme, the 2022 United Nations Climate Change Conference is currently underway. It would be interesting to take a look at what people around the globe are saying on social networks about the discussions taking place there. 
+
+* [ ] Todo 1 - Scrape the tweets around COP27 event (from 6/11/2022 to 18/11/2022)   
+* [ ] Todo 2 - Begin analysis
 
 
 <!-- Contributing -->
@@ -270,48 +139,22 @@ function App() {
 </a>
 
 
-Contributions are always welcome!
+Contributions and suggestions are always welcome!
 
-See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
-
-<!-- FAQ -->
-## :grey_question: FAQ
-
-- Question 1
-
-  + Answer 1
-
-- Question 2
-
-  + Answer 2
-
-
-<!-- License -->
-## :warning: License
-
-Distributed under the no License. See LICENSE.txt for more information.
+You can contact me using my details below to get int touch.
 
 
 <!-- Contact -->
 ## :handshake: Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Mlondi Shoba - Twitter: [@ushoba_](https://twitter.com/ushoba_)     Email: - msmshoba@gmail.com
 
-Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
+Project Link: [https://github.com/Mo-Shoba/King-MisuZulu-Coronation](https://github.com/Mo-Shoba/King-MisuZulu-Coronation)
 
 
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
 
-Use this section to mention useful resources and libraries that you have used in your projects.
 
- - [Shields.io](https://shields.io/)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
- - [Readme Template](https://github.com/othneildrew/Best-README-Template)
+ - [Advertools Package](https://advertools.readthedocs.io/en/master/)
+ - [Readme Template](https://github.com/Louis3797/awesome-readme-template)
